@@ -108,11 +108,13 @@ operators.forEach(operator => {
 let invert = document.getElementById('invert')
 invert.addEventListener('click', () => {
     display.textContent = display.textContent * -1;
+    num1 = display.textContent;
 })
 
 let percentage = document.getElementById('percentage')
 percentage.addEventListener('click', () => {
     display.textContent = display.textContent / 100;
+    num1 = display.textContent;
 })
 
 let dot = document.getElementById('dot');
