@@ -46,25 +46,17 @@ button {
     background-color: #5B5B5C;
 }
 
-#buttons {
-    display: flex;
-    flex: 6 1 auto;
-    flex-direction: column;
-    background-color: yellow;
-    width: 240px;
-    justify-content: center;
-    align-items: center;
-}
 
-#b1, #b2, #b3 {
+
+#clear, #invert, #percentage {
     background-color: #3A3A3B;
 }
 
-#b4, #b8, #b12, #b16, #b19 {
+.operators, #equal {
     background-color: #FF9E0B;
 }
 
-#b17 {
+#zero {
     width: 120px;
 }
 
