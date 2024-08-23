@@ -106,8 +106,21 @@ operators.forEach(operator => {
 });
 
 let invert = document.getElementById('invert')
+invert.addEventListener('click', () => {
+    display.textContent = display.textContent * -1;
+})
 
-let percentage = document.getElementById('invert')
+let percentage = document.getElementById('percentage')
+percentage.addEventListener('click', () => {
+    display.textContent = display.textContent / 100;
+})
+
+let dot = document.getElementById('dot');
+dot.addEventListener('click', () => {
+    if (!display.textContent.includes('.')){
+        display.textContent += '.';
+    }
+})
 
 let equal = document.getElementById('equal');
 equal.addEventListener('click', equality);
