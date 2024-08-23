@@ -68,7 +68,7 @@ function equality(){
     result = operate(num1, oper, num2)
     display.textContent = result;
     num1 = result;
-    alert('Igualando/calculando')
+    // alert('Igualando/calculando')
     oper = '=';
 }
 
@@ -86,21 +86,21 @@ operators.forEach(operator => {
             num1 = display.textContent;
             oper = operator.textContent;
             overwrite = true;
-            alert ('Após primeiro número')
+            // alert ('Após primeiro número')
         } else if (num1 != 0 && num2 === 0){ // Segunda operacao/sem igualdade antes
             equality();
             oper = operator.textContent;
             overwrite = true;
-            alert('Após segundo número')
+            // alert('Após segundo número')
         } else if (num1 != 0 && num2 != 0 && oper != '='){ // Após igualdade
             equality();
             oper = operator.textContent;
             overwrite = true;
-            alert('Depois operação e igualdade')
+            // alert('Depois operação e igualdade')
         } else if (oper === '='){ // Após igualdade
             oper = operator.textContent;
             overwrite = true;
-            alert('Após somente igualdade')
+            // alert('Após somente igualdade')
         }
     });
 });
